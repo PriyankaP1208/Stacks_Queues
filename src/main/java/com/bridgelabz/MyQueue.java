@@ -4,7 +4,7 @@ public class MyQueue <K>{
     public final MyLinkedList<K> myLinkedList;
     public MyQueue()
     {
-        myLinkedList=new MyLinkedList<>();
+        myLinkedList = new MyLinkedList<>();
 
     }
     public void enqueue(INode<K> element)
@@ -18,5 +18,9 @@ public class MyQueue <K>{
     public void printQueue()
     {
         myLinkedList.printMyNodes();
+    }
+    public INode<K> dequeue()
+    {
+        return myLinkedList.popLast();
     }
 }

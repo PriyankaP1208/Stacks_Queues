@@ -54,9 +54,9 @@ public class MyLinkedList<K> {
             this.tail = myNode;
         }
     }
-    public INode<K> pop(){
-        INode<K> tempNode = this.head;
-        this.head = head.getNext();
+    public INode pop(){
+        INode tempNode = this.head;
+        this.head = this.head.getNext();
         return tempNode;
     }
     public INode popLast()
